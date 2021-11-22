@@ -1,0 +1,94 @@
+.register{
+    background-color: var(--color-gris-claro);
+}
+
+.register main form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.register main form input, form label, form select, form button{
+    width: 100%;
+    height: 35px;
+    margin: 10px auto;
+}
+
+.register main form select{
+    border: none;
+    border-radius: 8px;
+}
+
+.register main form input{
+    border: none;
+    border-radius: 8px;
+    padding-left: 8px;
+}
+
+.register main form .title{
+    font-weight: bold;
+    font-size: 14px;
+    height: 15px;
+}
+
+
+
+.register main form .check-box{
+    display: flex;
+    justify-content: left;
+    width: 52%;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.register main form .check-box label{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+}
+
+.register main form .check-box input{
+    width: 50%;
+    height: 15px;
+}
+
+
+
+.register main form .enviar{
+    background-color: var(--color-celeste);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+.register main form .borrar{
+    background-color: rgb(7, 7, 7);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Error */
+
+.register main form span{
+    color: red;
+    width: 100%;
+}
+
+
+@media (min-width: 361px){
+    /* Main */
+    .register main form{
+        width: 65%;
+    }
+}
+
+@media (min-width: 769px){
+    .register main form{
+        width: 50%;
+    }    
+}

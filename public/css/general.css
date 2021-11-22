@@ -1,0 +1,37 @@
+:root{
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro: #666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-credit-card{
+    color: var(--color-celeste)
+}
+
+.fa-gift{
+    color: var(--color-celeste)
+}
+
+.fa-user-shield{
+    color: var(--color-celeste)
+}

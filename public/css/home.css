@@ -1,0 +1,308 @@
+.home{
+    background-color: var(--color-gris-claro);
+}
+
+/*Header*/
+
+header {
+    background-color: var(--color-amarillo);
+    padding-bottom: 1.7em;
+}
+
+header .nav1 .buscador{
+    display: flex;
+    padding: 20px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header .nav1 .buscador a{
+    width: 49%;
+}
+
+header .nav1 .buscador .header1{
+    width: 49%;
+    display: flex;
+    align-items: center;
+}
+
+header .nav1  .header2{
+    width: 100%;
+    margin-top: 2em;
+    color: black;
+}
+
+header .nav1 .buscador .header1 form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+header .nav1 .buscador .header1 form .searchBar{
+    position: relative;
+    width: 90%;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+}
+
+header .nav1 .buscador .header1 form button{
+    background-color: white;
+    border: none;
+    border-radius: 12%;
+    position: absolute;
+    height: 3%;
+    width: 6%;
+}
+
+header .nav1 .buscador .header1 form button i{
+    color: grey;
+}
+
+header p{
+    text-align: center;
+}
+
+.nav1 .listas{
+    display: none;
+}
+
+.burguer-menu i{
+    font-size: 24px;
+}
+
+.burguer-menu{
+    color: white;
+    background-color: var(--color-celeste);
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+}
+
+.burguer{
+    text-align: center;
+}
+
+/* Banner */
+
+.home .banner{
+    width: 100vw;
+}
+
+/* Main */
+
+.home .main-products{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.home .img-product{
+    width: 100%;
+}
+
+.home main h2{
+    font-size: 24px;
+    color: var(--color-gris-oscuro);
+    margin-bottom: 24px;
+}
+
+.home main .main-products article .description .precio-desc{
+    display: flex;
+}
+
+.home main .main-products article .description .precio-desc .precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+.home main .main-products article .description .precio-desc .desc{
+    color: var(--color-verde);
+    font-size: 16px;
+    width: 70%;
+}
+
+.home main .main-products article .description .truck{
+    position: absolute;
+    right: 44px;
+    top: -22px;
+}
+
+.home main .fa-truck{   
+    color: var(--color-verde);
+   
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.home main h3{
+    font-size: 16px;
+    color: var(--color-gris-oscuro);
+    display: none;
+}
+
+.home main article{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.home main article .description{
+    border-top: 1px solid var(--color-gris-claro);
+    padding: 15px;
+    background-color: white;
+    position: relative;
+}
+
+.home main .main-products .products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Footer*/
+
+footer{
+    background-color: white;
+}
+
+footer div{
+    text-align: center;
+    
+}
+
+.copyright h4{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+footer .texto{
+    text-align: center;
+}
+
+footer .fa-credit-card{
+    margin-top: 60px;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+footer .fa-gift{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+footer .fa-user-shield{
+    font-size: 32px;
+    margin-bottom: 10px;
+   
+}
+
+
+footer h4, footer p{
+    color: var(--color-gris-oscuro);
+}
+
+
+
+footer .copyright{
+    text-align: left;
+    margin-left: 15px;
+}
+
+/* Media Querys*/
+
+@media (min-width: 361px){
+    
+    /* Main */
+
+    .home main h3{
+        display: block;
+    }
+
+    .home main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    header .nav1 .listas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    header .nav1 .lista1{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    header .nav1 .lista2{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .burguer-menu{
+        display: none;
+    }
+}
+
+   
+
+@media (min-width: 769px){
+
+    .home main article{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    header .nav1 .buscador a{
+        width: 30%;
+    }
+    
+    header .nav1 .buscador .header1{
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    
+    header .nav1 .buscador .header2{
+        width: 30%;
+        margin-top: 0px;
+    }
+
+    header .nav1 .listas{
+        justify-content: space-around;
+    }
+
+    header .nav1 .lista1{
+        width: 36%;
+        justify-content: space-between;
+    }
+    
+    header .nav1 .lista2{
+        width: 36%;
+        justify-content: space-between;
+    }
+   
+}
+
+@media (min-width: 1024px){
+    .home main article{
+        width: 22%;
+    }
+
+    .home main .main-products article .description .precio-desc .desc{
+        text-align: center;
+    }
+}
